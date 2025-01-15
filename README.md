@@ -21,8 +21,7 @@ A location widget in this context could e.g. be a widget that allows you to auto
 
 ### Normal usage:
 ```shell
-# This will create a geoNames.js file in
-# your current directory.
+# This will create a geoNames.js file in your current directory.
 python3 geonames2js.py
 ```
 
@@ -37,18 +36,13 @@ python3 geonames2js.py --help
 # Output JSON instead of JavaScript:
 python3 geonames2js.py --format=JSON
 
-# Output a country file, region file, and
-# city file instead of merging the three:
+# Output a country file, region file, and city file instead of merging the three:
 python3 geonames2js.py --individual-files
 
-# Include GeoNames city IDs in the city data.
-# For regions and countries, IDs are already
-# included. This option will make the output
-# larger.
+# Include GeoNames city IDs in the city data. For regions and countries, IDs are already included. This option will make the output larger.
 python3 geonames2js.py --include-ids
 
-# Don't include latitude and longitude in the
-# city output. This makes the output smaller.
+# Don't include latitude and longitude in the city output. This makes the output smaller.
 python3 geonames2js.py --exclude-locations
 
 ```
