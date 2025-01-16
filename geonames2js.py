@@ -57,7 +57,7 @@ def compile_regions(data: list) -> list:
   return {val[0]: val[1] for val in data}
 
 def compile_cities(data: list) -> Union[list, dict]:
-  rows = {} if options.include_ids else []
+  rows = []
   for val in data:
     parts = {
       'id': int(val[0]),
@@ -73,10 +73,14 @@ def compile_cities(data: list) -> Union[list, dict]:
     if not options.exclude_locations:
       row.extend([parts['latitude'], parts['longitude']])
 
+    """ While it would be helpful to make rows an object and use the
+    city IDs as keys, the fact is that for this project the city file
+    size needs to be as small as possible, and adding the ID to the
+    array helps keep the file size down. """
     if options.include_ids:
-      rows[parts['id']] = row
-    else:
-      rows.append(row)
+      row.append(parts['id'])
+
+    rows.append(row)
 
   return rows
 
