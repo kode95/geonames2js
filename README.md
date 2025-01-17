@@ -13,11 +13,12 @@ A location widget in this context could e.g. be a widget that allows you to auto
 1. Make sure you have Python 3.5+ installed on your computer.
 1. Download geonames2js.py.
 1. Open your terminal and change directory to where you downloaded the script into.
-1. Continue to [Usage](#usage). If the ```python3``` command doesn't work on your system even if Python is installed, try with ```python``` or ```py``` instead.
 
 
 
 ## Usage
+
+Note: If the ```python3``` command doesn't work on your system even if Python is installed, try with ```python``` or ```py``` instead.
 
 ### Normal usage:
 ```shell
