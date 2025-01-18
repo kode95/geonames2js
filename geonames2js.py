@@ -45,7 +45,7 @@ def parse_csv(data: str) -> list:
 
 def to_json(data: Union[list, dict]) -> str:
   """ Return compact JSON (as small as possible). """
-  return json.dumps(data, separators=(',', ':'))
+  return json.dumps(data, ensure_ascii=False, separators=(',', ':'))
 
 def to_js(data: Union[list, dict]) -> str:
   return f'export default{to_json(data)}'
