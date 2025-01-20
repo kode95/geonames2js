@@ -4,7 +4,7 @@ Save place-name data (countries, regions, and cities) from [GeoNames](https://ww
 
 This project is not intended to convert everything from GeoNames into JavaScript or JSON. It's intended to save specific pieces of data that are commonly needed when you want to create e.g. a location widget in an app or website.
 
-A location widget in this context could e.g. be a widget that allows you to autocomplete a city or country name. In order to make such a widget and have the data on the client-side (which is sometimes preferable), you'd typically need a JS version of the data. That is what this project provides.
+A location widget in this context could e.g. be a widget that allows you to autocomplete a city or country name (an example of that could be [autocompleteCity](https://github.com/kode95/autocompleteCity), another project of mine). In order to make such a widget and have the data on the client-side (which is sometimes preferable), you'd typically need a JS version of the data. That is what this project provides.
 
 
 
